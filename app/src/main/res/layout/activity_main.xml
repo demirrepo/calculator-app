@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:textColor="@color/white"
+        android:paddingHorizontal="30dp"
+        android:textSize="80dp"
+        android:paddingVertical="25dp"
+        android:fontFamily="@font/poppins_semibold"
+        />
+    
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:id="@+id/nums"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/on_button"
+                android:text="ON"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="30dp"
+                style="@style/buttonStyle"
+                android:layout_height="80dp"/>
+            <Button
+                android:id="@+id/num7"
+                android:layout_width="80dp"
+                android:text="7"
+                android:textSize="35dp"
+                style="@style/secondButtonStyle"
+                android:layout_height="80dp"/>
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/num4"
+                android:text="4"
+                android:textSize="35dp"
+                style="@style/secondButtonStyle"
+                android:layout_height="80dp"/>
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/num1"
+                android:text="1"
+                android:textSize="35dp"
+                style="@style/secondButtonStyle"
+                android:layout_height="80dp"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:src="@drawable/baseline_backspace_24"
+                android:id="@+id/clearButton"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="30dp"
+                android:gravity="center"
+                style="@style/buttonStyle"
+                android:layout_height="80dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="80dp"
+                style="@style/buttonStyle"
+                android:text="OFF"
+                android:id="@+id/off_button"
+                android:textSize="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_height="80dp"/>
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/num8"
+                android:text="8"
+                android:textSize="35dp"
+                style="@style/secondButtonStyle"
+                android:layout_height="80dp"/>
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/num5"
+                android:text="5"
+                android:textSize="35dp"
+                style="@style/secondButtonStyle"
+                android:layout_height="80dp"/>
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/num2"
+                android:text="2"
+                android:textSize="35dp"
+                style="@style/secondButtonStyle"
+                android:layout_height="80dp"/>
+
+            <Button
+                android:id="@+id/num0"
+                android:text="0"
+                android:textSize="35dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="80dp"
+                style="@style/secondButtonStyle"
+                android:layout_height="80dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ac_button"
+                android:text="AC"
+                android:textSize="30dp"
+                android:layout_width="80dp"
+                android:fontFamily="@font/poppins_semibold"
+                style="@style/buttonStyle"
+                android:layout_height="80dp"/>
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/num9"
+                android:text="9"
+                android:textSize="35dp"
+                style="@style/secondButtonStyle"
+                android:layout_height="80dp"/>
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/num6"
+                android:text="6"
+                android:textSize="35dp"
+                style="@style/secondButtonStyle"
+                android:layout_height="80dp"/>
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/num3"
+                android:text="3"
+                android:textSize="35dp"
+                style="@style/secondButtonStyle"
+                android:layout_height="80dp"/>
+
+            <Button
+                android:layout_width="80dp"
+                android:text="."
+                android:id="@+id/dot_button"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="40dp"
+                style="@style/buttonStyle"
+                android:layout_height="80dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/division"
+                android:text="/"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="30dp"
+                style="@style/buttonStyle"
+                android:layout_height="80dp"/>
+            <Button
+                android:layout_width="80dp"
+                android:text="*"
+                android:textSize="35dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:id="@+id/multiplication"
+                style="@style/buttonStyle"
+                android:layout_height="80dp"/>
+            <Button
+                android:layout_width="80dp"
+                android:text="-"
+                android:textSize="35dp"
+                android:id="@+id/subtraction"
+                android:fontFamily="@font/poppins_semibold"
+                style="@style/buttonStyle"
+                android:layout_height="80dp"/>
+            <Button
+                android:id="@+id/addition"
+                android:text="+"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="35dp"
+                android:layout_width="80dp"
+                style="@style/buttonStyle"
+                android:layout_height="80dp"/>
+
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/equal_button"
+                android:text="="
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="35dp"
+                style="@style/buttonStyle"
+                android:layout_height="80dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
